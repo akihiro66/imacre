@@ -10,6 +10,8 @@ module Imacre
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
+    #日本語化
+    config.i18n.default_locale = :ja
 
     config.generators do |g|
       g.assets false          # CSS, JavaScriptファイルは生成しない
