@@ -72,11 +72,9 @@ p {
 
 #logo {
   float: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
 
   img {
-    width: 150px;
+    width: 200px;
   }
 }
 
@@ -90,4 +88,21 @@ footer {
   small {
     float: center;
   }
+}
+
+// ログイン画面
+
+.container-login {
+  @extend .container-fluid;
+  max-width: 576px;
+  padding: 2rem;
+}
+
+// フラッシュ
+div.alert-notice {
+  @extend .alert-info;
+}
+
+div.alert-alert {
+  @extend .alert-danger;
 }
