@@ -36,6 +36,9 @@ require "capybara/rspec"
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
 RSpec.configure do |config|
+  # 使用する際に FactoryBot を省略できるようにする
+  config.include FactoryBot::Syntax::Methods
+  config.include Devise::TestHelpers, type: :controller
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
