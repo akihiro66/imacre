@@ -4,11 +4,15 @@
     <%= bootstrap_devise_error_messages! %>
     <div class="form-group">
       <%= f.label :nickname, "ニックネーム" %>
-      <%= f.text_field :nickname, autofocus: true, autocomplete: 'nickname', class: 'form-control', required: true %>
+      <%= f.text_field :nickname, autofocus: true, autocomplete: 'nickname', class: 'form-control' %>
     </div>
     <div class="form-group">
       <%= f.label :email %>
       <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :introduction, "自己紹介" %>
+      <%= f.text_area :introduction, autofocus: true, autocomplete: 'introduction', class: 'form-control' %>
     </div>
     <div class="form-group">
       <%= f.label :password %>
